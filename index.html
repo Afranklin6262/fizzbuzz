@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="olive"></p>
+    <script>
+        let msg = "";
+        for(za=1; za<101; za++) {
+            if(za % 3 == 0 && za % 7 == 0) {
+                msg += "fizzbuzz<br>";
+            }
+            else if(za % 7 == 0) {
+                msg += "fizz<br>";
+            } 
+            else if( za % 3 == 0) {
+                msg += "buzz<br>";
+            }
+            else {
+                msg += za + "<br>";
+            }
+
+        }
+        document.querySelector("#olive").innerHTML = msg;
+        document.cookie = "pineapples do not belong on pizza, margherita pizza is objectively the best"
+    </script>
+    
+</body>
+</html>
